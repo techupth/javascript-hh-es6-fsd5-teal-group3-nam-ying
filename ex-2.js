@@ -12,6 +12,13 @@ let studentScores = {
   tech: 100,
 };
 
-// Start coding here
+// Merging Nested Object
+let newStudentProfile = {
+  ...studentScores,
+  scores: {
+    ...studentScores,
+    thai: studentProfile.scores.thai,
+  },
+};
 
 console.log(newStudentProfile);

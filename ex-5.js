@@ -1,5 +1,6 @@
-function sum() {
-  // Start coding here !
+// Rest Operators
+function sum(...input) {
+  return input.reduce((value, sum) => sum + value);
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
