@@ -13,5 +13,11 @@ let studentScores = {
 };
 
 // Start coding here
+// const {scores}= studentProfile
+// const newStudentProfile = {...studentProfile,scores:{...scores,...studentScores}};
+// const newStudentProfile={...studentProfile,scores:{...studentProfile.scores,...studentScores}}
+const newStudentProfile={...studentProfile,scores:{...studentScores,...studentProfile.scores}}
 
-console.log(newStudentProfile);
+// ใน {}เป็น object
+console.log(newStudentProfile)
+
