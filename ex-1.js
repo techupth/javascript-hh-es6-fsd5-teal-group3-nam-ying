@@ -11,6 +11,9 @@ let additionalProperties = {
   hobbies: ["Football", "Coding"],
 };
 
-// Start coding here
-
+// Merging object
+let newStudentProfile = {
+  ...studentProfile,
+  ...additionalProperties,
+};
 console.log(newStudentProfile);
